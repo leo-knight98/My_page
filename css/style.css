@@ -92,7 +92,6 @@ a, a:visited, a:active, a:hover {
 }
 
 .img {
-    width: 40%;
     margin: 20px;
     padding-right: 20px;
     border-right: 1px solid #aaa9bc;
@@ -121,6 +120,7 @@ a, a:visited, a:active, a:hover {
 
 #projectContainer {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 3rem;
 }
@@ -181,6 +181,34 @@ a, a:visited, a:active, a:hover {
     margin-left: 15px;
 }
 
+#contact-div {
+    margin-bottom: 50px;
+    width: 95%;
+    border: 2px solid #aaa9bc;
+    border-radius: 25px;
+    padding: 20px 0;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+input, textarea {
+    width: 80%;
+    margin: 10px 0;
+    background-color: #aaa9bc;
+    border: none;
+}
+
+input {
+    height: 30px;
+}
+
+textarea {
+    height: 100px;
+}
+
 @media (max-width: 768px) {
 
     #about-me {
@@ -227,5 +255,16 @@ a, a:visited, a:active, a:hover {
 
     #about-me {
         width: 65%;
+    }
+
+    .img {
+        width: 40%;
+    }
+
+    #contact-div {
+        display: flex;
+        width: 65%;
+        margin: 20px auto 50px auto;
+        justify-content: center;
     }
 }
