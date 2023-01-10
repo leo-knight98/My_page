@@ -21,4 +21,18 @@ window.onload = function() {
     let project = new Project()
     let projectContainer = document.getElementById('projectContainer');
     projectContainer.innerHTML = project.showProjects();
+
+    function sendEmail() {
+        Email.send({
+            Host : "smtp.mailtrap.io",
+            Username : "8229986d6015a0",
+            Password : "630eeb06d6373c",
+            To : 'recipient@example.com',
+            From : "sender@example.com",
+            Subject : "Test email",
+            Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+        }).then(
+          message => alert(message)
+        );
+        }
 }
