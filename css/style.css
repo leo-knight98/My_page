@@ -83,7 +83,7 @@ a, a:visited, a:active, a:hover {
 }
 
 #about-me {
-    width: 65%;
+    width: 95%;
     border: 2px solid #aaa9bc;
     border-radius: 25px;
     margin: 0 auto;
@@ -223,5 +223,9 @@ a, a:visited, a:active, a:hover {
 
     #tools {
         width: 45%;
+    }
+
+    #about-me {
+        width: 65%;
     }
 }
