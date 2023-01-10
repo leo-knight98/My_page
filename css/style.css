@@ -188,6 +188,11 @@ a, a:visited, a:active, a:hover {
         justify-content: space-between;
     }
 
+    #about-me .img {
+        border: none;
+        width: 80%;
+    }
+
     #skillsContainer {
         flex-flow: column nowrap;
         justify-content: space-between;
