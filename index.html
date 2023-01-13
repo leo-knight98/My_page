@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Amita&family=Courgette&family=Linden+Hill&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     <div id="container">
@@ -145,11 +146,12 @@
         <section id="contact">
             <h2 class="title">Contact me</h2>
             <div id="contact-div">
-                <form method="post" action="" id="contactForm">
+                <form method="post" action="https://formsubmit.co/55f61d8a7ff28e216437de4c04201cc9" id="contactForm">
+                    <input type="hidden" name="_next" value="https://leomanach-portfolio.netlify.app/pages/thankyou.html">
                     <label>E-mail:</label><br>
-                    <input type="email" id="email" placeholder="E-mail"><br>
+                    <input type="email" id="email" name="email" placeholder="E-mail"><br>
                     <label>Message:</label><br>
-                    <textarea></textarea><br>
+                    <textarea id="text" name="text" placeholder="Your message here"></textarea><br>
                     <button type="submit" id="send" value="Submit">Submit</button>
                 </form>
             </div>
