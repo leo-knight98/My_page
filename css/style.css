@@ -73,17 +73,23 @@ button {
     padding: 10px;
     width: 150px;
     margin: 0px 10px;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: #aaa9bc;
+    color: #1c1e2e
 }
 
-button:hover a {
+a:hover {
+    color: #1c1e2e
+}
+
+a button:hover {
     color: #1c1e2e;
 }
 
-a, a:visited, a:active, a:hover {
+a, a:visited, a:active {
     color: #aaa9bc;
     text-decoration: none;
 }
