@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Amita&family=Courgette&family=Linden+Hill&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     <div id="container">
@@ -20,7 +19,7 @@
                 <h2>Web developer</h2>
             </div>
             <div id="buttons">
-                <a href='#contact'><button type="button" id="contact">Contact me</button></a>
+                <a href='#contactForm'><button type="button" id="contact">Contact me</button></a>
                 <a href='files/Leo_Manach_CV.pdf' target="_blank"><button type="button" id="cv">Download CV</button></a>
             </div>
         </section>
@@ -146,7 +145,7 @@
         <section id="contact">
             <h2 class="title">Contact me</h2>
             <div id="contact-div">
-                <form method="post" action="https://formsubmit.co/55f61d8a7ff28e216437de4c04201cc9" id="contactForm">
+                <form method="post" name="contact" id="contactForm" data-netlify="true">
                     <input type="hidden" name="_next" value="https://leomanach-portfolio.netlify.app/pages/thankyou.html">
                     <label>E-mail:</label><br>
                     <input type="email" id="email" name="email" placeholder="E-mail"><br>
